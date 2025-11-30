@@ -9,41 +9,26 @@
 
 /control/saveHistory
 
-/GeometryParameter/setXehalflength 2.5
-/GeometryParameter/setXeradius 4.2
-
-#thickness of 3-fold shield, Pb1 is inner and Pb2 is outter.
-/GeometryParameter/setPbSheild1Thickness 2.0
-/GeometryParameter/setBPESheildThickness 5.0
-/GeometryParameter/setPbSheild2Thickness 2.0
-/Runmodel/ModelChoose NG
-/stepping/gammaCheck false
-# record particle in scintillator and Xe
-/stepping/NGplan true
-# record particle in Pb2, should turn off for long run
-/stepping/recordsheild true
-# construct floor
-/GeometryParameter/ConstructFloor false
+/Runmodel/ModelChoose NaI
 
 #点源输入
 /gps/particle neutron
 
 /gps/pos/type Point
 # particle source postition
-/gps/pos/centre 0 0 -161 cm 
+/gps/pos/centre 0 0 9.02 cm 
 
 # particle direction
 /gps/ang/type iso 
-#/gps/direction 0 0 1
 
 #能谱输入
 /gps/ene/type Arb
 /gps/hist/type arb
 #能量/数量输入
-#                       E(MeV) Rel.yield
-/gps/hist/point    2.5 0.00
-/gps/hist/point    2.45 1.00
-/gps/hist/point    2.4 0.00
+#              	 E(MeV) Rel.yield
+/gps/hist/point    0.45 0.00
+/gps/hist/point    0.5 1.00
+/gps/hist/point    0.55 0.00
 
 /gps/hist/inter Spline
 #/gps/hist/inter Lin
