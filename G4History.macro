@@ -1,0 +1,19 @@
+/GeometryParameter/setXehalflength 2.5
+/run/reinitializeGeometry
+/GeometryParameter/setXeradius 2.5
+/run/reinitializeGeometry
+/GeometryParameter/setPbSheildThickness 5
+/run/reinitializeGeometry
+/GeometryParameter/setSinctotDistance 40
+/run/reinitializeGeometry
+/gps/particle neutron
+/gps/pos/type Point
+/gps/pos/centre 0 0 0 cm
+/gps/ang/type iso
+/gps/ene/type Arb
+/gps/hist/type arb
+/gps/hist/point 2.5 0.00
+/gps/hist/point 2.45 1.00
+/gps/hist/point 2.4 0.00
+/gps/hist/inter Spline
+/run/beamOn 1000
